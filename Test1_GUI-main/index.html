@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CineSearch Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app" data-loading="false">
+
+    <h1>CineSearch Pro</h1>
+
+    <input 
+        id="search-input"
+        type="text"
+        placeholder="Search for a movie..."
+        autocomplete="off"
+    />
+
+    <div class="spinner"></div>
+
+    <ul id="results"></ul>
+
+    <div id="details"></div>
+
+</div>
+
+
+<!-- FRAGMENT RENDERING TEMPLATE -->
+<template id="result-template">
+    <li class="result-item">
+        <span class="title"></span>
+    </li>
+</template>
+
+<script src="script.js"></script>
+</body>
+</html>
